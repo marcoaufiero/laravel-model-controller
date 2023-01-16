@@ -10,9 +10,7 @@ class HomeController extends Controller
     public function index(){
         
         $all_movies = Movie::all();
-
-        dd($all_movies);
-
+        
         return view('welcome', compact('all_movies'));
     }
 }
